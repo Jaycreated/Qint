@@ -10,6 +10,12 @@ export const navItems = [
 
 export const whatsappLink = 'https://wa.me/2348088669200?text=Hello%20QINTENT%20CONSULTS%2C%20I%27d%20like%20to%20make%20an%20enquiry.';
 
+export const teamEmails = [
+  'arabiu@qintentconsulting.com',
+  'adk@qintentconsulting.com',
+  'isaac.omonayin@qintentconsulting.com',
+];
+
 export const slides = [
   {
     image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1600&q=80',

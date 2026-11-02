@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ScrollReveal from '../components/ScrollReveal';
-import { whatsappLink } from '../data/siteData';
+import { teamEmails, whatsappLink } from '../data/siteData';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -14,6 +14,7 @@ export default function ContactPage() {
   };
 
   const contactModes = ['WhatsApp', 'Phone call', 'Email'];
+  const primaryEmail = teamEmails[0];
 
   return (
     <div className="page-shell route-page">
@@ -36,6 +37,13 @@ export default function ContactPage() {
               <p>34, Oladoyinbo Street, Aguda, Ogba, Ikeja, Lagos, Nigeria</p>
               <p>RC 1295628</p>
               <p>TIN: 20969685 - 0001</p>
+              <div className="contact-links" style={{ display: 'grid', gap: '0.6rem', marginTop: '1rem' }}>
+                {teamEmails.map((email) => (
+                  <a key={email} href={`mailto:${email}`} className="contact-email-link" style={{ color: '#174c4d', fontWeight: 600, textDecoration: 'underline' }}>
+                    {email}
+                  </a>
+                ))}
+              </div>
               <div className="contact-type-group" aria-label="Preferred contact method">
                 {contactModes.map((mode) => (
                   <button
@@ -48,7 +56,14 @@ export default function ContactPage() {
                   </button>
                 ))}
               </div>
-              <a className="btn" href={whatsappLink} target="_blank" rel="noreferrer">{contactType === 'Email' ? 'Email us ↗' : 'WhatsApp us ↗'}</a>
+              <a
+                className="btn"
+                href={contactType === 'Email' ? `mailto:${primaryEmail}` : whatsappLink}
+                target={contactType === 'Email' ? undefined : '_blank'}
+                rel={contactType === 'Email' ? undefined : 'noreferrer'}
+              >
+                {contactType === 'Email' ? 'Email us ↗' : 'WhatsApp us ↗'}
+              </a>
             </div>
           </ScrollReveal>
 
