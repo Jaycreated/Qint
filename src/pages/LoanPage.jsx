@@ -42,6 +42,9 @@ export default function LoanPage() {
               <div className="mini-label">Best fit</div>
               <h3>{selectedLoan.headline}</h3>
               <p>{selectedLoan.summary}</p>
+              {selectedLoan.extendedDescription && (
+                <p>{selectedLoan.extendedDescription}</p>
+              )}
             </div>
             <div className="detail-stack">
               <div className="status-pill">{selectedLoan.indicator}</div>

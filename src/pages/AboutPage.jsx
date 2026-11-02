@@ -1,5 +1,5 @@
 import ScrollReveal from '../components/ScrollReveal';
-import { aboutTimeline, aboutValues } from '../data/siteData';
+import { aboutProfile, aboutTimeline, aboutValues } from '../data/siteData';
 
 export default function AboutPage() {
   return (
@@ -30,6 +30,52 @@ export default function AboutPage() {
                 <li>Clear explanation of funding options and requirements</li>
                 <li>Direct, human support from a responsive team</li>
                 <li>Honest conversations that focus on realistic next steps</li>
+              </ul>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="page-section">
+        <div className="wrap grid-two">
+          <ScrollReveal>
+            <div className="story-panel">
+              <h3>About Q-Intent Consults</h3>
+              <p>{aboutProfile.overview}</p>
+              <p>{aboutProfile.overviewDetail}</p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="story-panel">
+              <h3>Vision, Mission and Our Core Values</h3>
+              <p><strong>Our Vision</strong><br />{aboutProfile.vision}</p>
+              <p><strong>Our Mission</strong><br />{aboutProfile.mission}</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="page-section muted-section">
+        <div className="wrap grid-two">
+          <ScrollReveal>
+            <div className="story-panel">
+              <h3>Our Core Services</h3>
+              <ul className="check-list">
+                {aboutProfile.services.map((service) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="story-panel">
+              <h3>Our Core Values</h3>
+              <ul className="check-list">
+                {aboutProfile.values.map((value) => (
+                  <li key={value}>{value}</li>
+                ))}
               </ul>
             </div>
           </ScrollReveal>

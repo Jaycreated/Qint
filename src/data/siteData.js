@@ -91,6 +91,7 @@ export const loanOptions = [
     label: 'Bridge finance',
     headline: 'Short-term funding for immediate needs and time-sensitive decisions',
     summary: 'We help clients navigate temporary funding gaps with clear conversations, realistic expectations, and a practical understanding of timing and options.',
+    extendedDescription: 'Through our consumer lending operations, we provide structured credit solutions to eligible individuals to meet various financial needs, including emergency expenses, personal projects, household needs, education, and other lifestyle requirements. Our lending approach is designed to offer flexibility, responsible credit assessment, competitive terms, and convenient repayment arrangements.',
     details: ['Designed for temporary cash-flow and timing gaps', 'Explains requirements and likely next steps clearly', 'A useful bridge while longer-term plans are being finalised'],
     fit: 'Best for business owners, professionals, and individuals facing a short-term financial gap.',
     indicator: '1–3 month planning window',
@@ -147,6 +148,29 @@ export const aboutValues = [
   { title: 'Human support', description: 'Every conversation is handled with direct, personal attention from a real team who understands the weight of financial decisions.', tone: 'blue' },
   { title: 'Practical guidance', description: 'We focus on realistic next steps, honest expectations, and actionable advice that works in the real world.', tone: 'orange' },
 ];
+
+export const aboutProfile = {
+  overview: 'Q-Intent Consults is a dynamic financial services and consumer lending company committed to providing innovative, accessible, and reliable financial solutions to individuals, households, entrepreneurs, and businesses.',
+  overviewDetail: 'We are focused on bridging financial gaps by providing flexible lending solutions, financial advisory services, credit facilities, and other tailored financial products that support personal financial needs and business growth.',
+  vision: 'To become a leading and trusted financial services and consumer lending company recognised for delivering innovative financial solutions, promoting financial inclusion, and empowering individuals and businesses to achieve their financial goals.',
+  mission: 'To provide accessible, responsible, and customer-focused financial services through innovative lending products, professional advisory services, and sustainable financial solutions that create lasting value for our customers and stakeholders.',
+  services: [
+    'Consumer Lending: Provision of short-term and medium-term credit facilities to eligible individuals to meet personal and household financial needs.',
+    'Personal Loans: Flexible financing solutions designed to support individual financial commitments and lifestyle needs.',
+    'Business Financing: Financial support and credit facilitation for small businesses, entrepreneurs, and growing enterprises.',
+    'Financial Consultancy: Professional financial advisory and consulting services to individuals and businesses.',
+    'Credit Facilitation: Supporting customers in accessing suitable financing opportunities through structured credit solutions and financial partnerships.',
+    'Financial Planning Support: Providing guidance and solutions that help customers make informed financial decisions.',
+  ],
+  values: [
+    'Integrity: We uphold honesty, transparency, and ethical business practices in all our dealings.',
+    'Customer Commitment: Our customers remain at the centre of our business decisions.',
+    'Innovation: We continuously seek better and smarter ways to deliver financial solutions.',
+    'Professionalism: We maintain high standards of service delivery and operational excellence.',
+    'Responsibility: We promote responsible lending and sustainable financial practices.',
+    'Trust: We seek to establish long-term relationships built on confidence and reliability.',
+  ],
+};
 
 export const aboutTimeline = [
   { year: '2015', title: 'Founding principles', summary: 'Q Intent Consulting Limited began with a simple mission: make financial conversations more accessible, direct, and useful.' },
