@@ -1730,45 +1730,46 @@ h3,
   }
 
   .footer {
-    padding: 42px 0 22px;
+    padding: 30px 0 18px;
   }
 
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding-bottom: 18px;
+    gap: 14px;
+    padding-bottom: 12px;
     overflow: visible;
   }
 
   .footer-brand-name {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 6px;
   }
 
   .footer p,
   .footer-links a,
   #office p,
   #office strong {
-    font-size: 12px;
-    line-height: 1.6;
+    font-size: 11px;
+    line-height: 1.45;
   }
 
   .footer h4 {
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 0.12em;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .footer-links {
-    gap: 7px;
+    gap: 5px;
   }
 
   .legal {
     flex-direction: column;
     align-items: flex-start;
-    font-size: 11px;
-    gap: 8px;
+    font-size: 10px;
+    gap: 5px;
+    padding-top: 12px;
   }
 
   .service {
