@@ -1637,7 +1637,6 @@ h3,
   .grid-two,
   .grid-three,
   .metric-grid,
-  .footer-grid,
   .process-layout,
   .timeline {
     position: relative;
@@ -1656,7 +1655,6 @@ h3,
   .grid-two::after,
   .grid-three::after,
   .metric-grid::after,
-  .footer-grid::after,
   .process-layout::after,
   .timeline::after {
     content: 'Swipe';
@@ -1727,9 +1725,50 @@ h3,
   .grid-three,
   .metric-grid,
   .process-layout,
-  .timeline,
-  .footer-grid {
+  .timeline {
     grid-template-columns: none;
+  }
+
+  .footer {
+    padding: 42px 0 22px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 18px;
+    overflow: visible;
+  }
+
+  .footer-brand-name {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .footer p,
+  .footer-links a,
+  #office p,
+  #office strong {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .footer h4 {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    gap: 7px;
+  }
+
+  .legal {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 11px;
+    gap: 8px;
   }
 
   .service {
