@@ -14,10 +14,10 @@ export default function LoanPage() {
             <div className="kicker">Loans</div>
           </ScrollReveal>
           <ScrollReveal>
-            <h1>Short-term finance options.</h1>
+            <h1>Short-term bridge finance support.</h1>
           </ScrollReveal>
           <ScrollReveal>
-            <p>We help clients understand practical bridge funding solutions designed to cover a temporary gap while they prepare for their next phase financially.</p>
+            <p>We help clients understand practical bridge funding options designed to cover a temporary cash-flow gap while they prepare for the next stage of their financial plan.</p>
           </ScrollReveal>
         </div>
       </section>

@@ -53,8 +53,8 @@ export default function HomePage() {
 
           <ScrollReveal>
             <p>
-              Explore bridge finance services and practical financial support designed to help individuals and
-              businesses understand their options and move forward with confidence.
+              Explore bridge finance support and practical financial guidance designed to help individuals and
+              businesses navigate short-term cash-flow gaps and move forward with confidence.
             </p>
           </ScrollReveal>
 
@@ -217,7 +217,7 @@ export default function HomePage() {
             <div className="cta-panel">
               <div>
                 <h2>Let’s talk about what you need.</h2>
-                <p>Have a question about our bridge finance services? Reach out to start a direct conversation with Q Intent Consults.</p>
+                <p>Have a question about our bridge finance support? Reach out to start a direct conversation with Q Intent Consults.</p>
               </div>
               <a className="btn light" href={whatsappLink} target="_blank" rel="noreferrer">
                 Contact our team ↗

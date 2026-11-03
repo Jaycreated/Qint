@@ -74,7 +74,7 @@ export default function App() {
               <Link className="brand footer-brand-name" to="/" aria-label="QINTENT CONSULTS home">
                 QINTENT CONSULTS
               </Link>
-              <p>A personal, professional approach to bridge finance services and practical funding conversations.</p>
+              <p>A personal, professional approach to bridge finance support and practical funding conversations.</p>
             </div>
             <div>
               <h4>Explore</h4>
@@ -94,7 +94,7 @@ export default function App() {
           </div>
           <div className="legal">
             <span>© <span>{year}</span> Q Intent Consulting Limited. All rights reserved.</span>
-            <span>Bridge finance services · Lagos, Nigeria</span>
+            <span>Bridge finance support · Lagos, Nigeria</span>
           </div>
         </div>
       </footer>

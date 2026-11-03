@@ -43,7 +43,7 @@ export const serviceList = [
   {
     icon: '↗',
     title: 'Bridge Finance',
-    description: 'Short-term funding support for individuals and businesses navigating a temporary gap while preparing for their next financial move.',
+    description: 'Flexible credit support for emergency expenses, personal needs, education, and short-term financial gaps.',
     tone: 'green',
   },
   {
@@ -63,7 +63,7 @@ export const serviceList = [
 export const faqData = [
   {
     question: 'What is bridge finance?',
-    answer: 'Bridge finance is a short-term funding solution designed to help cover a temporary financial gap while a person or business moves toward a longer-term plan. The suitability of any option depends on the individual circumstances and agreed terms.',
+    answer: 'Bridge finance is a short-term funding option designed to support a temporary cash-flow gap while a person or business works toward a longer-term solution. The suitability of any option depends on individual circumstances and the agreed terms.',
   },
   {
     question: 'How do I know if I am eligible?',
@@ -89,10 +89,10 @@ export const loanOptions = [
   {
     id: 'bridge',
     label: 'Bridge finance',
-    headline: 'Short-term funding for immediate needs and time-sensitive decisions',
-    summary: 'We help clients navigate temporary funding gaps with clear conversations, realistic expectations, and a practical understanding of timing and options.',
-    extendedDescription: 'Through our consumer lending operations, we provide structured credit solutions to eligible individuals to meet various financial needs, including emergency expenses, personal projects, household needs, education, and other lifestyle requirements. Our lending approach is designed to offer flexibility, responsible credit assessment, competitive terms, and convenient repayment arrangements.',
-    details: ['Designed for temporary cash-flow and timing gaps', 'Explains requirements and likely next steps clearly', 'A useful bridge while longer-term plans are being finalised'],
+    headline: 'Temporary funding support for time-sensitive financial needs',
+    summary: 'We help clients manage short-term financial gaps with practical guidance, realistic expectations, and a clear understanding of timing and next steps.',
+    extendedDescription: 'Through our consumer lending operations, we provide structured credit solutions to eligible individuals to meet immediate financial needs, including time-sensitive obligations, household requirements, education-related costs, and other personal commitments. Our approach is designed to offer clarity, responsible assessment, and flexible repayment arrangements that fit the circumstances.',
+    details: ['Designed for temporary cash-flow and timing gaps', 'Explains requirements and likely next steps clearly', 'A practical bridge while longer-term plans are being finalised'],
     fit: 'Best for business owners, professionals, and individuals facing a short-term financial gap.',
     indicator: '1–3 month planning window',
   },
@@ -175,5 +175,5 @@ export const aboutProfile = {
 export const aboutTimeline = [
   { year: '2015', title: 'Founding principles', summary: 'Q Intent Consulting Limited began with a simple mission: make financial conversations more accessible, direct, and useful.' },
   { year: 'Lagos', title: 'Client-focused support', summary: 'Our work expanded around practical guidance for individuals and businesses seeking longer-term clarity in fast-moving financial situations.' },
-  { year: 'Today', title: 'Flexible finance advisory', summary: 'We continue to support clients with bridge finance conversations, business funding guidance, and clear next-step planning.' },
+  { year: 'Today', title: 'Flexible finance advisory', summary: 'We continue to support clients with bridge finance conversations, practical funding guidance, and confident next-step planning.' },
 ];
