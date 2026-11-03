@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import ScrollReveal from '../components/ScrollReveal';
-import { teamEmails, whatsappLink } from '../data/siteData';
+import { googleFormLink, teamEmails, whatsappLink } from '../data/siteData';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [contactType, setContactType] = useState('WhatsApp');
+  const [contactType, setContactType] = useState('Travel Facility Application');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
@@ -13,7 +13,7 @@ export default function ContactPage() {
     window.open(whatsappLink, '_blank', 'noopener,noreferrer');
   };
 
-  const contactModes = ['WhatsApp', 'Phone call', 'Email'];
+  const contactModes = ['WhatsApp', 'Email', 'Travel Facility Application'];
   const primaryEmail = teamEmails[0];
 
   return (
@@ -58,11 +58,21 @@ export default function ContactPage() {
               </div>
               <a
                 className="btn"
-                href={contactType === 'Email' ? `mailto:${primaryEmail}` : whatsappLink}
-                target={contactType === 'Email' ? undefined : '_blank'}
-                rel={contactType === 'Email' ? undefined : 'noreferrer'}
+                href={
+                  contactType === 'Email'
+                    ? `mailto:${primaryEmail}`
+                    : contactType === 'Travel Facility Application'
+                      ? googleFormLink
+                      : whatsappLink
+                }
+                target={contactType === 'Travel Facility Application' || contactType === 'WhatsApp' ? '_blank' : undefined}
+                rel={contactType === 'Travel Facility Application' || contactType === 'WhatsApp' ? 'noreferrer' : undefined}
               >
-                {contactType === 'Email' ? 'Email us ↗' : 'WhatsApp us ↗'}
+                {contactType === 'Email'
+                  ? 'Email us ↗'
+                  : contactType === 'Travel Facility Application'
+                    ? 'Open travel form ↗'
+                    : 'WhatsApp us ↗'}
               </a>
             </div>
           </ScrollReveal>

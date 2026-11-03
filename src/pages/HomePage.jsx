@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
-import { faqData, processSteps, serviceList, slides, whatsappLink } from '../data/siteData';
+import { faqData, googleFormLink, processSteps, serviceList, slides, whatsappLink } from '../data/siteData';
 
 function AccordionItem({ question, answer, defaultOpen = false }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -65,6 +65,9 @@ export default function HomePage() {
               </Link>
               <a className="btn hero-secondary" href={whatsappLink} target="_blank" rel="noreferrer">
                 Contact Our Team ↗
+              </a>
+              <a className="btn hero-secondary" href={googleFormLink} target="_blank" rel="noreferrer">
+                QINT Travel Facility Application ↗
               </a>
             </div>
           </ScrollReveal>
@@ -219,9 +222,14 @@ export default function HomePage() {
                 <h2>Let’s talk about what you need.</h2>
                 <p>Have a question about our bridge finance support? Reach out to start a direct conversation with Q Intent Consults.</p>
               </div>
-              <a className="btn light" href={whatsappLink} target="_blank" rel="noreferrer">
-                Contact our team ↗
-              </a>
+              <div className="actions" style={{ justifyContent: 'flex-end' }}>
+                <a className="btn light" href={whatsappLink} target="_blank" rel="noreferrer">
+                  Contact our team ↗
+                </a>
+                <a className="btn light" href={googleFormLink} target="_blank" rel="noreferrer">
+                  Travel Facility Application ↗
+                </a>
+              </div>
             </div>
           </ScrollReveal>
         </div>

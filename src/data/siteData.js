@@ -10,6 +10,8 @@ export const navItems = [
 
 export const whatsappLink = 'https://wa.me/2348088669200?text=Hello%20QINTENT%20CONSULTS%2C%20I%27d%20like%20to%20make%20an%20enquiry.';
 
+export const googleFormLink = 'https://docs.google.com/forms/d/e/1FAIpQLSexQOVWdU1g_Mzy7pFESdpOStLV8ApsEnHmIlfdCwswUvV10Q/viewform?usp=sharing&ouid=117148811775325661066';
+
 export const teamEmails = [
   'arabiu@qintentconsulting.com',
   'adk@qintentconsulting.com',
