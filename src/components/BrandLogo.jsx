@@ -3,11 +3,11 @@ import logo from '../../assets/logo/qintlogo.png';
 
 export default function BrandLogo() {
   return (
-    <Link className="brand-logo-link" to="/" aria-label="QINTENT CONSULTS home">
+    <Link className="brand-logo-link" to="/" aria-label="Q-INTENT CONSULTS home">
       <img
         className="brand-logo-image"
         src={logo}
-        alt="QINTENT CONSULTS logo"
+        alt="Q-INTENT CONSULTS logo"
       />
     </Link>
   );

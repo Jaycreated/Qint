@@ -71,8 +71,8 @@ export default function App() {
         <div className="wrap">
           <div className="footer-grid">
             <div>
-              <Link className="brand footer-brand-name" to="/" aria-label="QINTENT CONSULTS home">
-                QINTENT CONSULTS
+              <Link className="brand footer-brand-name" to="/" aria-label="Q-INTENT CONSULTS home">
+                Q-INTENT CONSULTS
               </Link>
               <p>A personal, professional approach to bridge finance support and practical funding conversations.</p>
             </div>
